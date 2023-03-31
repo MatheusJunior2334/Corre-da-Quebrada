@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    bottom: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: bona_nova;
+    src: url(/Assets/FONTS/Bona_Nova/BonaNova-Regular.ttf);
+}
+
+@font-face {
+    font-family: yeon_sung;
+    src: url(/Assets/FONTS/Yeon_Sung/YeonSung-Regular.ttf);
+}
+
+main {
+    background-color: #ffffff;
+    width: 100%;
+    height: 150vh;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+    height: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background:#ffffff;
+}
+     
+::-webkit-scrollbar-thumb {
+    background: #021e2e;
+}
+
+a {
+    color: #fffafa;
+    text-decoration: none;
+}
+
+/*Início do Header*/
+
+header {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #000;
+    background-color: #006FB0;
+}
+nav {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+#header_inicial {
+    width: 20%;
+    height: auto;
+    padding: 10px 0;
+}
+
+#header_inicial div {
+    width: 85%;
+    height: auto;
+    margin: auto;
+    border-radius: 30px;
+    background-color: #fff;
+    transition: 1s;
+}
+
+#header_inicial img {
+    width: 17vw;
+}
+
+#header_middle {
+    width: 60%;
+    height: auto;
+    margin: auto;
+}
+
+#header_middle div {
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;  
+    float: right; 
+}
+
+#header_middle a {
+    color: #ffffff;
+    font-size: 1.55vw;
+}
+
+#header_middle a:hover {
+    text-decoration: underline;
+}
+
+#header_end {
+    width: 5%;
+    height: auto;
+    background-color: greenyellow;
+}
+
+/*Fim da Header*/
+
+/*Início da Section1*/
+
+#section1 {
+    width: 100%;
+    height: 85vh;
+    font-size: 4vw;    
+}
+
+#section1 article{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.div_type1 {
+    width: 50%;
+    height: auto;
+    padding: 10vh 1vw;
+}
+
+.div_type1 img {
+    width: 45vw;
+    border: 1px solid #0093E8;
+    border-radius: 15px;
+}
+
+#section1 h1 {
+    width: 100%;
+    height: auto;
+    font-weight: normal;
+    padding: 5vh 0;
+}
+
+#button_adjust {
+    display: flex;
+    justify-content: center;
+}
+
+#button_adjust button {
+    background-color: #0093E8;
+    border: 2px solid #000;
+    border-radius: 20px;
+    width: 65%;
+    height: 8vh;
+    font-size: 2vw;
+    opacity: 95%;
+    transition: 1s;
+}
+
+#button_adjust button:hover {
+    opacity: 100%;
+    background-color: #086397;
+    border: 2px solid #086397;
+    transition: 1s;
+}
+
+#button_adjust button a {
+    transition: 0.5s;
+}
+
+#button_adjust button a:hover {
+    color: #000;
+    transition: 1s;
+}
+
+.text_color {
+    color: #0D09B8;
+}
+
+/*Fim da Section1*/
+
+/*Footer*/
+
+footer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 150px;
+    background-color: #0093E8;
+}
+
+#footer_superior {
+    width: 85%;
+    height: auto;
+    margin: auto;
+    padding: 2vh 0;
+    border-bottom: 1px solid #000;
+    display: flex;
+    flex-direction: row;
+}
+
+footer img {
+    width: 7vw;
+    padding-left: 2vw;
+}
+
+footer h1 {
+    font-size: 3vw;
+    font-family: yeon_sung;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+footer nav {
+    width: 65%;
+    height: auto;
+    margin: auto;
+    padding: 4vh 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+footer a {
+    color: #000;
+    font-size: 1.7vw;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+#footer_inferior {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background-color: #2B1E1E;
+    color: #D7F8EE;
+}
+
+#footer_inferior h5 {
+    font-size: 1.3vw;
+    font-weight: normal;
+    padding: 1vh 0;
+}
