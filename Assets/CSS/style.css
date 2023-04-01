@@ -30,7 +30,7 @@ main {
 }
      
 ::-webkit-scrollbar-thumb {
-    background: #021e2e;
+    background: #b0c4cf;
 }
 
 a {
@@ -172,6 +172,54 @@ nav {
 }
 
 /*Fim da Section1*/
+
+/*Início da Section2*/
+
+#section2 {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../IMAGES/trafego-veiculo-reflexoes-urbano-da-cidade.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: opacity();
+    z-index: -1;
+}
+
+#section2_part1 {
+    width: 50%;
+    height: 90vh;
+    margin-top: 5vh;
+    background-color: rgba(0, 240, 150, 0.9);
+    opacity: 100%;
+    z-index: 2;
+    float: left;
+}
+
+#section2_part1 svg {
+    width: 94%;
+    height: auto;
+    margin-top: 5vh;
+    margin-left: 3%;
+    background-color: #ffffff;
+}
+
+#section2_part2 {
+    width: 50%;
+    height: 90vh;
+    margin-top: 5vh;
+    background-color: rgba(0, 240, 150, 0.9);
+    opacity: 100%;
+    z-index: 2;
+    float: right;
+}
+
+.str0 {stroke: #ffffff; stroke-width:1}
+.fill {fill: #84c225}
+.hover {stroke: #0b3f99}
+
+svg {
+    font-size: 45px;
+}
 
 /*Footer*/
 
