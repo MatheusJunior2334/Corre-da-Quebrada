@@ -14,6 +14,11 @@
     src: url(/Assets/FONTS/Yeon_Sung/YeonSung-Regular.ttf);
 }
 
+@font-face {
+    font-family: work_sans;
+    src: url(/Assets/FONTS/Work_Sans/static/WorkSans-Regular.ttf);
+}
+
 main {
     background-color: #ffffff;
     width: 100%;
@@ -119,7 +124,7 @@ nav {
 .div_type1 {
     width: 50%;
     height: auto;
-    padding: 10vh 1vw;
+    padding: 10vh 2vw;
 }
 
 .div_type1 img {
@@ -176,52 +181,105 @@ nav {
 /*Início da Section2*/
 
 #section2 {
+    position: relative;
     width: 100%;
     height: 100vh;
-    background-image: url(../IMAGES/trafego-veiculo-reflexoes-urbano-da-cidade.jpg);
+    background-image: url(../IMAGES/bigbus.png);
     background-repeat: no-repeat;
     background-size: cover;
-    filter: opacity();
-    z-index: -1;
 }
 
 #section2_part1 {
     width: 50%;
-    height: 90vh;
+    height: 88vh;
     margin-top: 5vh;
-    background-color: rgba(0, 240, 150, 0.9);
+    margin-bottom: 5vh;
+    padding: 1vh 0;
+    background-color: rgba(140, 210, 251, 0.7);
     opacity: 100%;
-    z-index: 2;
+    z-index: 1;
     float: left;
 }
 
 #section2_part1 svg {
     width: 94%;
-    height: auto;
-    margin-top: 5vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin-left: 3%;
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.2);
 }
+
+
+.str0 {stroke: #000000; stroke-width:2}
+.fill {fill: #D2691E}
+.hover {fill: #065685}
+
 
 #section2_part2 {
     width: 50%;
-    height: 90vh;
+    height: 88vh;
     margin-top: 5vh;
-    background-color: rgba(0, 240, 150, 0.9);
+    margin-bottom: 5vh;
+    padding: 1vh 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(140, 210, 251, 0.7);
     opacity: 100%;
-    z-index: 2;
+    z-index: 1;
     float: right;
 }
 
-.str0 {stroke: #ffffff; stroke-width:1}
-.fill {fill: #84c225}
-.hover {stroke: #0b3f99}
-
-svg {
-    font-size: 45px;
+#section2 h1 {
+    margin-top: 2vh;
+    font-size: 4vw;
+    text-align: center;
+    font-family: yeon_sung;
 }
 
-/*Footer*/
+#section2 p {
+    font-size: 2vw;
+}
+
+#regiao_nome {
+    font-size: 3vw;
+    font-family: work_sans;
+    text-align: center;
+    color: rgb(210, 105, 30);
+}
+
+#regiao_nome img {
+    width: 40vw;
+    margin-top: 3%;
+}
+
+#regiao_descricao {
+    width: 100%;
+    margin-top: 5vh;
+}
+
+#regiao_descricao ul {
+    float: left;
+}
+
+#regiao_descricao img {
+    width: 28vw;
+    padding-right: 5%;
+    float: right;
+}
+
+#regiao_leste, #regiao_norte, #regiao_oeste, #regiao_sudeste, #regiao_sudoeste, #regiao_central {
+    display: none;
+    font-size: 1.7vw;
+    padding-left: 3%;
+}
+
+
+/*Fim da Section2*/
+
+/*Início do Footer*/
 
 footer {
     position: relative;

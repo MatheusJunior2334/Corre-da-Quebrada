@@ -22,7 +22,7 @@
                 <div id="header_middle">
                     <div>
                         <a href="#">Home</a>
-                        <a href="#">Regiões</a>
+                        <a href="#section2">Regiões</a>
                         <a href="#">Serviços</a>
                         <a href="#">Contato</a>
                     </div>
@@ -61,7 +61,7 @@
                     <!--Início do Path1 - Região Central-->
 
 
-                <path id="Região Central" class="fill str0" d="M 698.00,300.00
+                <path id="Região Central" class="fill str0" onclick="regiao_central()" d="M 698.00,300.00
                     C 702.53,301.84 713.87,305.23 711.35,311.87
                         710.11,315.13 706.33,316.63 704.86,320.29
                         703.30,324.18 705.17,327.70 701.69,331.90
@@ -513,7 +513,7 @@
                     <!--Início do Path2 - Região Leste-->
 
             
-                <path id="Região Leste" class="fill str0" d="M 842.00,249.00
+                <path id="Região Leste" class="fill str0" onclick="regiao_leste()" d="M 842.00,249.00
                     C 841.90,239.92 846.69,241.86 850.27,237.59
                         852.36,235.09 852.09,231.16 856.06,228.69
                         859.25,226.70 861.08,228.68 864.83,225.67
@@ -2559,7 +2559,7 @@
                     <!--Início do Path3 - Região Norte-->
 
 
-                <path id="Região Norte" class="fill str0" d="M 364.00,232.00
+                <path id="Região Norte" class="fill str0" onclick="regiao_norte()" d="M 364.00,232.00
                     C 366.39,226.12 371.91,220.20 379.00,220.96
                         382.00,221.28 385.24,223.80 389.00,224.23
                         389.00,224.23 396.90,224.23 396.90,224.23
@@ -3116,7 +3116,7 @@
                     <!--Início do Path4 - Região Oeste-->
 
 
-                <path id="Região Oeste" class="fill str0" d="M 392.00,462.00
+                <path id="Região Oeste" class="fill str0" onclick="regiao_oeste()" d="M 392.00,462.00
                     C 392.00,462.00 409.17,462.99 409.17,462.99
                         409.17,462.99 410.00,467.00 410.00,467.00
                         416.58,468.43 417.46,474.64 426.00,474.00
@@ -3648,7 +3648,7 @@
                     <!--Início do Path5 - Região Sudeste-->
 
 
-                <path id="Região Sudeste" class="fill str0" d="M 639.00,623.00
+                <path id="Região Sudeste" class="fill str0" onclick="regiao_sudeste()" d="M 639.00,623.00
                     C 638.84,621.06 638.46,620.04 639.69,618.22
                         641.34,615.77 644.55,615.20 647.00,613.88
                         647.00,613.88 658.00,607.05 658.00,607.05
@@ -4605,7 +4605,7 @@
                     <!--Início do Path6 - Região Sudoeste-->
 
 
-                <path id="Região Sudoeste" class="fill str0" stroke-width="1" d="M 200.00,805.00
+                <path id="Região Sudoeste" class="fill str0" onclick="regiao_sudoeste()" d="M 200.00,805.00
                     C 208.24,814.55 213.53,815.30 215.49,816.85
                         218.08,818.90 218.92,822.25 221.39,824.49
                         221.39,824.49 229.83,829.27 229.83,829.27
@@ -5829,14 +5829,84 @@
 
             </div>
         <div id="section2_part2">
-            <div id="microregiao_nome">Regiões</div>
-                <div id="microregiao_descricao">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, officiis quas. In esse accusantium quis iste magnam repellendus necessitatibus vero nulla corrupti tempora natus a omnis, cumque harum unde delectus?
-                    </p>
+            <article>
+                <h1>Regiões</h1>
+                <p>Presto serviços a qualquer zona da região metropolitana de São Paulo, entre em contato comigo para mais informações</p>
+                <div id="regiao_nome">Região Metropolitana <img src="Assets/IMAGES/Imagem-Região_Metropolitana.jpg" alt="Avenida Paulista" title="Avenida Paulista"></div>
+                    <div id="regiao_descricao">
+                        <div id="regiao_leste">
+                            <ul type="circle">
+                                <li>Arujá</li>
+                                <li>Biritiba Mirim</li>
+                                <li>Ferraz de Vasconcelos</li>
+                                <li>Guararema</li>
+                                <li>Guarulhos</li>
+                                <li>Itaquaquecetuba</li>
+                                <li>Mogi das Cruzes</li>
+                                <li>Poá</li>
+                                <li>Salesópolis</li>
+                                <li>Santa Isabel</li>
+                                <li>Suzano</li>
+                            </ul>
+                            <img src="Assets/IMAGES/Imagem-Região_Leste.jpg" alt="Guarulhos" title="Guarulhos">
+                        </div>
+                        <div id="regiao_norte">
+                            <ul type="circle">
+                                <li>Caieiras</li>
+                                <li>Cajamar</li>
+                                <li>Francisco Morato</li>
+                                <li>Franco da Rocha</li>
+                                <li>Mairiporã</li>
+                            </ul>
+                            <img src="Assets/IMAGES/Imagem-Região_Norte.jpg" alt="Franco da Rocha" title="Franco da Rocha">
+                        </div>
+                        <div id="regiao_oeste">
+                            <ul type="circle">
+                                <li>Barueri</li>
+                                <li>Carapicuíba</li>
+                                <li>Itapevi</li>
+                                <li>Jandira</li>
+                                <li>Osasco</li>
+                                <li>Pirapora do Bom Jesus</li>
+                                <li>Santana de Parnaíba</li>
+                            </ul>
+                            <img src="Assets/IMAGES/Imagem-Região_Oeste.jpg" alt="Osasco" title="Osasco">
+                        </div>
+                        <div id="regiao_sudeste">
+                            <ul type="circle">
+                                <li>Diadema</li>
+                                <li>Mauá</li>
+                                <li>Ribeirão Pires</li>
+                                <li>Rio Grande da Serra</li>
+                                <li>Santo André</li>
+                                <li>São Bernardo do Campo</li>
+                                <li>São Caetano do Sul</li>
+                            </ul>
+                            <img src="Assets/IMAGES/Imagem-Região_Sudeste.jpg" alt="Mauá" title="Mauá">
+                        </div>
+                        <div id="regiao_sudoeste">
+                            <ul type="circle">
+                                <li>Cotia</li>
+                                <li>Embu das Artes</li>
+                                <li>Embu-Guaçu</li>
+                                <li>Itapecerica da Serra</li>
+                                <li>Juquitiba</li>
+                                <li>São Lourenço da Serra</li>
+                                <li>Taboão da Serra</li>
+                                <li>Vargem Grande Paulista</li>
+                            </ul>
+                            <img src="Assets/IMAGES/Imagem-Região_Sudoeste.jpg" alt="Itapecerica da Serra" title="Itapecerica da Serra">
+                        </div>
+                        <div id="regiao_central">
+                            <ul type="circle">
+                                <li>São Paulo - Centro</li>
+                            </ul>
+                            <img src="Assets/IMAGES/Imagem-Região_Central.jpg" alt="São Paulo" title="São Paulo">
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </article>
         </section>
         <footer>
             <div id="footer_superior">
@@ -5845,7 +5915,7 @@
             </div>
             <nav>
                 <a href="#">Home</a>
-                <a href="#">Regiões</a>
+                <a href="#section2">Regiões</a>
                 <a href="#">Serviços</a>
                 <a href="#">Contato</a>
             </nav>
