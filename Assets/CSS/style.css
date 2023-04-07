@@ -64,7 +64,23 @@
 }
 
 /*Fim dos Atributos do Scrollbar Navegadores comuns*/
+#theme {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    bottom: 50%;
+    right: 0;
+    background-image: url(../IMAGES/Moon_img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: translateY(-50%);
+    z-index: 1;
+}
 
+#theme img {
+    width: 45px;
+    height: 50px;
+}
 
 main {
     background-color: #ffffff;
@@ -136,7 +152,6 @@ nav {
 #header_end {
     width: 5%;
     height: auto;
-    background-color: greenyellow;
 }
 
 /*Fim da Header*/
@@ -223,9 +238,14 @@ nav {
     background-size: cover;
 }
 
+#section2 article {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
 #section2_part1 {
     width: 50%;
-    height: 88vh;
+    height: 88%;
     margin-top: 5vh;
     margin-bottom: 5vh;
     padding: 1vh 0;
@@ -247,13 +267,13 @@ nav {
 
 
 .str0 {stroke: #000000; stroke-width:2}
-.fill {fill: #D2691E}
-.hover {fill: #065685}
+.fill {fill: #ff6a00;}
+.hover {fill:#ff6a00bb; stroke: #fff; stroke-width: 2;}
 
 
 #section2_part2 {
     width: 50%;
-    height: 88vh;
+    height: 88%;
     margin-top: 5vh;
     margin-bottom: 5vh;
     padding: 1vh 0;
@@ -282,7 +302,8 @@ nav {
     font-size: 3vw;
     font-family: work_sans;
     text-align: center;
-    color: rgb(210, 105, 30);
+    font-weight: 400;
+    color: #ff5e00;
 }
 
 #regiao_nome img {
@@ -328,64 +349,121 @@ nav {
 #section4 {
     position: relative;
     width: 100%;
-    height: 90vh;
+    height: auto;
     margin-top: 5vh;
     display: flex;
+    background-color: #8CD2FB;
 }
 
-#section4_part1, #section4_part2 {
-    width: 50%;
-    height: 100%;
-    float: left;
+#section4 article {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px 0;
 }
 
 #section4_part1 {
-    background-color: #c50808;
+    width: 35%;
+    height: 100%;
 }
 
 #section4_part1 h1 {
     font-size: 4vw;
     font-family: work_sans;
-    padding-top: 40px;
     text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#section4_part1 h2 {
+    font-size: 2.5vw;
+    font-family: work_sans;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+#section4_part1 div {
+    width: 55%;
+    height: 7.5vh;
+    font-size: 1.8vw;
+    gap: 12%;
+    display: flex;
+    margin: auto;
+    margin-top: 15px;
 }
 
 #section4_part1 p {
     font-size: 1.8vw;
+    margin-top: 50px;
+}
+
+#section4_part1 label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #section4_part2 {
-    background-color: #657812;
+    width: 55%;
+    height: 100%;
 }
 
 #section4_part2 fieldset {
-    width: 95%;
-    margin: auto;
+    width: 100%;
+    height: 100%;
     border: 0;
+    padding-top: 40px;
 }
 
 #section4_part2 label{
     font-size: 2vw;
+    font-family: work_sans;
+    -webkit-text-stroke: 0.3px #000;
 }
 
 #section4_part2 input, textarea {
     font-size: 1.2vw;
+    font-family: work_sans;
     text-indent: 5px;
     border-radius: 5px;
     border: 0;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 10px;
+}
+
+#section4_part2 input {
+    height: 40px;
 }
 
 textarea {
+    padding-top: 10px;
     height: 150px;
+    resize: none;
+}
+
+#submit {
+    width: 25%;
+    float: right;
+}
+
+#submit input {
+    width: 100%;
+    padding-right: 5px;
+    cursor: pointer;
+    background-color: #494646d7;
+    color: #fff;
+    transition: all 0.5s;
+}
+
+#submit input:hover {
+    transform: scale(1.05);
 }
 
 
-.smaller {width: 100%; height: 40px;}
+.smaller {width: 100%;}
 .bigger {width: 100%;}
 .left {width: 48%; float: left;}
 .right {width: 48%; float: right;}
-.normal {float: left; width: 100%;}
+.normal {width: 100%; float: left;}
 /*Fim da Section4*/
 
 
@@ -395,7 +473,7 @@ footer {
     position: relative;
     width: 100%;
     height: auto;
-    margin-top: 150px;
+    margin-top: 5vh;
     background-color: #0093E8;
 }
 

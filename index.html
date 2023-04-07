@@ -29,14 +29,11 @@
                         <a href="#">Contato</a>
                     </div>
                 </div>
-                <div id="header_end">
-                    <div>
-                        <p onclick="mudarTema ()"> tema escuro </p>
-                    </div>
-                </div>
+                <div id="header_end"></div>
             </nav>
         </header>
         <section id="section1">
+            <div id="theme" onclick="mudarTema ()" title="Mudar Tema"></div>
             <article>
                 <div class="div_type1">
                     <h1>Suas viagens realizadas com <span class="text_color">Segurança</span> e <span class="text_color">Pontualidade</span></h1>
@@ -5911,7 +5908,20 @@
             <article>
                 <div id="section4_part1">
                     <h1>Contato</h1>
-                    <p>Entre em contato comigo pelas redes sociais ou preenchendo o formulário ao lado. Lembre-se de me informar trajetos e veículos caso tenha o interesse em meus serviços, e assim discutimos valores</p>
+                    <p>Entre em contato comigo pelas redes sociais ou preenchendo o formulário. Lembre-se de informar trajetos e veículos caso tenha o interesse em meus serviços, e assim podemos discutir valores</p>
+                    <h2>Redes Sociais</h2>
+                    <div>
+                        <a href="#" target="_blank">
+                            <img src="Assets/IMAGES/Whatsapp_icon.png">
+                        </a>
+                        <label for="Whatsapp">(11) 94027-5015</label>
+                    </div>
+                    <div>
+                        <a href="#" target="_blank">
+                            <img src="Assets/IMAGES/Facebook_icon.png">
+                        </a>
+                            <label for="Facebook">Marcio Junior</label>
+                    </div>
                 </div>
                 <div id="section4_part2">
                     <form action="#">
@@ -5920,32 +5930,29 @@
                                 <label for="nome">Nome:</label>
                                 <input type="text" name="nome" class="smaller" placeholder="Digite seu nome aqui:" tabindex="1" required>
                             </div>
-                            
                             <div class="right">
                                 <label for="sobrenome">Sobrenome:</label>
                                 <input type="text" name="sobrenome" class="smaller" placeholder="Digite seu sobrenome aqui:" tabindex="2" required>
                             </div>
-
                             <div class="left">
                                 <label for="email">E-mail:</label>
                                 <input type="email" name="email" class="smaller" placeholder="Digite seu e-mail aqui:" tabindex="3" required>
                             </div>
-
                             <div class="right">
                                 <label for="telefone">Telefone:</label>
                                 <input type="text" name="telefone" class="smaller" placeholder="Digite seu telefone aqui:" tabindex="4" required>
                             </div>
-
                             <div class="normal">
                                 <label for="assunto">Assunto:</label>
-                                <input type="text" name="assunto" class="bigger" placeholder="Digite seu assunto aqui:" tabindex="5">
+                                <input type="text" name="assunto" class="bigger" placeholder="Digite seu assunto aqui:" tabindex="5" required>
                             </div>
-                            
                             <div class="normal">
                                 <label for="mensagem">Mensagem:</label>
-                                <textarea name="mensagem" class="bigger" placeholder="Digite sua Mensagem aqui:" tabindex="6"></textarea>
+                                <textarea name="mensagem" class="bigger" placeholder="Digite sua Mensagem aqui:" tabindex="6" required maxlength="1000"></textarea>
                             </div>
-
+                            <div id="submit">
+                                <input type="submit" value="Enviar Formulário" >
+                            </div>
 
                         </fieldset>
                     </form>

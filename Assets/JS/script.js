@@ -6,19 +6,26 @@ let i = 0;
 function mudarTema(){
     switch(lastTheme){
         case "dark":
-           // document.querySelector("webkit-scrollbar-track").style.backgroundColor="#353333";
             scroll.style.setProperty("--scroll_color", "#eee0e0a2");
             scroll.style.setProperty("--scroll_bg", "#353333")
             document.querySelector("body").style.cssText="color: #fff";
             document.querySelector("main").style.backgroundColor="#302D2D";
+            //Header
             document.querySelector("header").style.backgroundColor="#494646";
             document.querySelector("header img").style.cssText="filter: invert(1)";
             document.querySelector("#header_inicial div").style.cssText="background-color: #302d2d";
+            //Dark Mode
+            document.getElementById("theme").style.backgroundImage="url('Assets/IMAGES/Sun_img.png')";
+            //Section1
             document.getElementById("section1").style.backgroundColor="#302D2D";
             document.getElementById("big_img").style.border="1px solid #0D09B8";
+            //Section2
             document.getElementById("section2").style.backgroundImage="url('/Assets/IMAGES/bigbus_dark.png')";
-            document.getElementById("section2_part1").style.backgroundColor= "rgba(0, 147, 232, 0.4)";
-            document.getElementById("section2_part2").style.backgroundColor= "rgba(0, 147, 232, 0.4)";
+            document.getElementById("section2_part1").style.backgroundColor="rgba(0, 147, 232, 0.4)";
+            document.getElementById("section2_part2").style.backgroundColor="rgba(0, 147, 232, 0.4)";
+            //Section4
+            document.getElementById("section4").style.backgroundColor="#007BC2";
+            //Footer
             document.querySelector("footer").style.backgroundColor="#494646";
             document.getElementById("footer_superior").style.cssText="border-bottom: 1px solid #fff";
             document.querySelector("footer img").style.cssText="filter: invert(1)";
@@ -40,14 +47,22 @@ function mudarTema(){
             scroll.style.setProperty("--scroll_bg", "#eee0e0a2")
             document.querySelector("body").style.cssText="color: #000";
             document.querySelector("main").style.backgroundColor="#FFF";
+            //Header
             document.querySelector("header").style.backgroundColor="#006FB0";
             document.querySelector("header img").style.cssText="filter: invert(0)";
             document.querySelector("#header_inicial div").style.cssText="background-color: #fff";
+            //Dark Mode
+            document.getElementById("theme").style.backgroundImage="url('Assets/IMAGES/Moon_img.png')";
+            //Section1
             document.getElementById("section1").style.backgroundColor="#fff";
             document.getElementById("big_img").style.border="1px solid #0093E8";
+            //Section2
             document.getElementById("section2").style.backgroundImage="url('Assets/IMAGES/bigbus_light.png')";
             document.getElementById("section2_part1").style.backgroundColor="rgba(140, 210, 251, 0.7)";
             document.getElementById("section2_part2").style.backgroundColor="rgba(140, 210, 251, 0.7)";
+            //Section4
+            document.getElementById("section4").style.backgroundColor="#8CD2FB";
+            //Footer
             document.querySelector("footer").style.backgroundColor="#0093E8";
             document.getElementById("footer_superior").style.cssText="border-bottom: 1px solid #000";
             document.querySelector("footer img").style.cssText="filter: invert(0)";
