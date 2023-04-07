@@ -19,23 +19,57 @@
     src: url(/Assets/FONTS/Work_Sans/static/WorkSans-Regular.ttf);
 }
 
-main {
-    background-color: #ffffff;
-    width: 100%;
-    height: 150vh;
+@keyframes effect1 {
+    from {
+        opacity: 0;
+        margin-left: 1%;
+    }
+
+    to {
+        opacity: 1;
+        margin-left: 0;
+    }
 }
+
+/*Início das Variáveis*/
+
+:root {
+    --scroll_color: #353333;
+}
+
+:root {
+    --scroll_bg: #eee0e0a2;
+}
+
+/*Fim das Variáveis*/
+
+
+/*Início dos Atributos do Scrollbar Navegadores comuns*/
 
 ::-webkit-scrollbar {
     width: 15px;
-    height: 15px;
 }
 
 ::-webkit-scrollbar-track {
-    background:#ffffff;
+    background-color: var(--scroll_bg);
 }
      
 ::-webkit-scrollbar-thumb {
-    background: #b0c4cf;
+    background: var(--scroll_color);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-button {
+    background-color: #ffffff;
+}
+
+/*Fim dos Atributos do Scrollbar Navegadores comuns*/
+
+
+main {
+    background-color: #ffffff;
+    width: 100%;
+    height: auto;
 }
 
 a {
@@ -111,7 +145,7 @@ nav {
 
 #section1 {
     width: 100%;
-    height: 85vh;
+    height: auto;
     font-size: 4vw;    
 }
 
@@ -153,14 +187,14 @@ nav {
     height: 8vh;
     font-size: 2vw;
     opacity: 95%;
-    transition: 1s;
+    transition: all 0.3s;
 }
 
 #button_adjust button:hover {
     opacity: 100%;
     background-color: #086397;
     border: 2px solid #086397;
-    transition: 1s;
+    transform: scale(1.05);
 }
 
 #button_adjust button a {
@@ -184,7 +218,7 @@ nav {
     position: relative;
     width: 100%;
     height: 100vh;
-    background-image: url(../IMAGES/bigbus.png);
+    background-image: url(../IMAGES/bigbus_light.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -208,7 +242,7 @@ nav {
     flex-direction: column;
     justify-content: center;
     margin-left: 3%;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.0);
 }
 
 
@@ -235,8 +269,9 @@ nav {
 #section2 h1 {
     margin-top: 2vh;
     font-size: 4vw;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     text-align: center;
-    font-family: yeon_sung;
+    font-family: work_sans;
 }
 
 #section2 p {
@@ -274,10 +309,85 @@ nav {
     display: none;
     font-size: 1.7vw;
     padding-left: 3%;
+
+    animation-name: effect1;
+    animation-duration: 0.2s;
+    animation-timing-function: linear;
 }
 
 
 /*Fim da Section2*/
+
+/*Início da Section3*/
+
+/*Fim da Section3
+
+
+/*Início da Section4*/
+
+#section4 {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    margin-top: 5vh;
+    display: flex;
+}
+
+#section4_part1, #section4_part2 {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+#section4_part1 {
+    background-color: #c50808;
+}
+
+#section4_part1 h1 {
+    font-size: 4vw;
+    font-family: work_sans;
+    padding-top: 40px;
+    text-align: center;
+}
+
+#section4_part1 p {
+    font-size: 1.8vw;
+}
+
+#section4_part2 {
+    background-color: #657812;
+}
+
+#section4_part2 fieldset {
+    width: 95%;
+    margin: auto;
+    border: 0;
+}
+
+#section4_part2 label{
+    font-size: 2vw;
+}
+
+#section4_part2 input, textarea {
+    font-size: 1.2vw;
+    text-indent: 5px;
+    border-radius: 5px;
+    border: 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+textarea {
+    height: 150px;
+}
+
+
+.smaller {width: 100%; height: 40px;}
+.bigger {width: 100%;}
+.left {width: 48%; float: left;}
+.right {width: 48%; float: right;}
+.normal {float: left; width: 100%;}
+/*Fim da Section4*/
+
 
 /*Início do Footer*/
 

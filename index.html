@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Assets/CSS/style.css" type="text/css">
     <link rel="shortcut icon" href="Assets/IMAGES/smallbus_copy.png" type="image/x-icon">
+    <script src="https://unpkg.com/scrollreveal" defer></script>   
+    <script src="Assets/JS/script.js" type="text/javascript" defer></script>
     <title>Márcio - Motorista Especial</title>
 </head>
 <body>
@@ -15,7 +17,7 @@
                 <div id="header_inicial">
                     <div>
                         <a href="#">
-                            <img src="Assets/IMAGES/Logo.png" alt="logo">
+                            <img src="Assets/IMAGES/Logo.png" alt="Imagem da logo, escrito Márcio Motorista Especial com uma imagem de um desenho de ônibus">
                         </a>
                     </div>
                 </div>
@@ -29,7 +31,7 @@
                 </div>
                 <div id="header_end">
                     <div>
-                        
+                        <p onclick="mudarTema ()"> tema escuro </p>
                     </div>
                 </div>
             </nav>
@@ -45,7 +47,7 @@
                    </div>
                 </div>
                 <div class="div_type1">
-                    <img src="Assets/IMAGES/mulher-asiatica-sentado-em-um-trem-usando-telefone-celular.jpg" alt="jpg">
+                    <img src="Assets/IMAGES/Mulher_img4.jpg" alt="Mulher sorridente saindo de uma van após uma viagem, num fundo de paisagens naturais como um parque" id="big_img">
                 </div>
             </article>
         </section>
@@ -5824,15 +5826,12 @@
 
                 <!--Fim do SVG-->
 
-                <script src="Assets/JS/script.js" type="text/javascript"></script>
-
-
             </div>
         <div id="section2_part2">
             <article>
                 <h1>Regiões</h1>
-                <p>Presto serviços a qualquer zona da região metropolitana de São Paulo, entre em contato comigo para mais informações</p>
-                <div id="regiao_nome">Região Metropolitana <img src="Assets/IMAGES/Imagem-Região_Metropolitana.jpg" alt="Avenida Paulista" title="Avenida Paulista"></div>
+                <p>Presto serviços a qualquer parte da região metropolitana de São Paulo, entre em contato comigo para mais informações</p>
+                <div id="regiao_nome">Região Metropolitana <img src="Assets/IMAGES/Imagem-Região_Metropolitana.jpg" alt="Imagem da Avenida Paulista" title="Avenida Paulista"></div>
                     <div id="regiao_descricao">
                         <div id="regiao_leste">
                             <ul type="circle">
@@ -5848,7 +5847,7 @@
                                 <li>Santa Isabel</li>
                                 <li>Suzano</li>
                             </ul>
-                            <img src="Assets/IMAGES/Imagem-Região_Leste.jpg" alt="Guarulhos" title="Guarulhos">
+                            <img src="Assets/IMAGES/Imagem-Região_Leste.jpg" alt="Imagem da cidade de Guarulhos" title="Guarulhos">
                         </div>
                         <div id="regiao_norte">
                             <ul type="circle">
@@ -5858,7 +5857,7 @@
                                 <li>Franco da Rocha</li>
                                 <li>Mairiporã</li>
                             </ul>
-                            <img src="Assets/IMAGES/Imagem-Região_Norte.jpg" alt="Franco da Rocha" title="Franco da Rocha">
+                            <img src="Assets/IMAGES/Imagem-Região_Norte.jpg" alt="Imagem da cidade de Franco da Rocha" title="Franco da Rocha">
                         </div>
                         <div id="regiao_oeste">
                             <ul type="circle">
@@ -5870,7 +5869,7 @@
                                 <li>Pirapora do Bom Jesus</li>
                                 <li>Santana de Parnaíba</li>
                             </ul>
-                            <img src="Assets/IMAGES/Imagem-Região_Oeste.jpg" alt="Osasco" title="Osasco">
+                            <img src="Assets/IMAGES/Imagem-Região_Oeste.jpg" alt="Imagem da cidade de Osasco" title="Osasco">
                         </div>
                         <div id="regiao_sudeste">
                             <ul type="circle">
@@ -5882,7 +5881,7 @@
                                 <li>São Bernardo do Campo</li>
                                 <li>São Caetano do Sul</li>
                             </ul>
-                            <img src="Assets/IMAGES/Imagem-Região_Sudeste.jpg" alt="Mauá" title="Mauá">
+                            <img src="Assets/IMAGES/Imagem-Região_Sudeste.jpg" alt="Imagem da cidade de Mauá" title="Mauá">
                         </div>
                         <div id="regiao_sudoeste">
                             <ul type="circle">
@@ -5895,34 +5894,81 @@
                                 <li>Taboão da Serra</li>
                                 <li>Vargem Grande Paulista</li>
                             </ul>
-                            <img src="Assets/IMAGES/Imagem-Região_Sudoeste.jpg" alt="Itapecerica da Serra" title="Itapecerica da Serra">
+                            <img src="Assets/IMAGES/Imagem-Região_Sudoeste.jpg" alt="Imagem da cidade de Itapecerica da Serra" title="Itapecerica da Serra">
                         </div>
                         <div id="regiao_central">
                             <ul type="circle">
                                 <li>São Paulo - Centro</li>
                             </ul>
-                            <img src="Assets/IMAGES/Imagem-Região_Central.jpg" alt="São Paulo" title="São Paulo">
+                            <img src="Assets/IMAGES/Imagem-Região_Central.jpg" alt="Imagem da cidade de São Paulo" title="São Paulo">
                         </div>
                     </div>
                 </div>
             </div>
         </article>
         </section>
+        <section id="section4">
+            <article>
+                <div id="section4_part1">
+                    <h1>Contato</h1>
+                    <p>Entre em contato comigo pelas redes sociais ou preenchendo o formulário ao lado. Lembre-se de me informar trajetos e veículos caso tenha o interesse em meus serviços, e assim discutimos valores</p>
+                </div>
+                <div id="section4_part2">
+                    <form action="#">
+                        <fieldset>
+                            <div class="left">
+                                <label for="nome">Nome:</label>
+                                <input type="text" name="nome" class="smaller" placeholder="Digite seu nome aqui:" tabindex="1" required>
+                            </div>
+                            
+                            <div class="right">
+                                <label for="sobrenome">Sobrenome:</label>
+                                <input type="text" name="sobrenome" class="smaller" placeholder="Digite seu sobrenome aqui:" tabindex="2" required>
+                            </div>
+
+                            <div class="left">
+                                <label for="email">E-mail:</label>
+                                <input type="email" name="email" class="smaller" placeholder="Digite seu e-mail aqui:" tabindex="3" required>
+                            </div>
+
+                            <div class="right">
+                                <label for="telefone">Telefone:</label>
+                                <input type="text" name="telefone" class="smaller" placeholder="Digite seu telefone aqui:" tabindex="4" required>
+                            </div>
+
+                            <div class="normal">
+                                <label for="assunto">Assunto:</label>
+                                <input type="text" name="assunto" class="bigger" placeholder="Digite seu assunto aqui:" tabindex="5">
+                            </div>
+                            
+                            <div class="normal">
+                                <label for="mensagem">Mensagem:</label>
+                                <textarea name="mensagem" class="bigger" placeholder="Digite sua Mensagem aqui:" tabindex="6"></textarea>
+                            </div>
+
+
+                        </fieldset>
+                    </form>
+                </div>
+            </article>
+        </section>
         <footer>
             <div id="footer_superior">
                 <h1>Márcio - Motorista Especial</h1>
-                <img src="Assets/IMAGES/smallbus_copy2.png" alt="Ônibus">
+                <img src="Assets/IMAGES/smallbus_copy2.png" alt="Desenho de um ônibus">
             </div>
             <nav>
-                <a href="#">Home</a>
-                <a href="#section2">Regiões</a>
-                <a href="#">Serviços</a>
-                <a href="#">Contato</a>
+                <a href="#" class="footer_options">Home</a>
+                <a href="#section2" class="footer_options">Regiões</a>
+                <a href="#" class="footer_options">Serviços</a>
+                <a href="#" class="footer_options">Contato</a>
             </nav>
             <div id="footer_inferior">
-                <h5>© Márcio - Motorista Especial - Copyright 2023 - Todos os direitos reservados</h5>
+                <h5>© Márcio - Motorista Especial - Copyright 2023 - Todos os direitos reservados - Criado por Matheus Júnior</h5>
             </div>
         </footer>
     </main>
+
+    
 </body>
 </html>
