@@ -23,6 +23,8 @@ function mudarTema(){
             document.getElementById("section2").style.backgroundImage="url('/Assets/IMAGES/bigbus_dark.png')";
             document.getElementById("section2_part1").style.backgroundColor="rgba(0, 147, 232, 0.4)";
             document.getElementById("section2_part2").style.backgroundColor="rgba(0, 147, 232, 0.4)";
+            //Section3
+            document.getElementById("section3").style.backgroundColor="#007BC2";
             //Section4
             document.getElementById("section4").style.backgroundColor="#007BC2";
             //Footer
@@ -60,6 +62,8 @@ function mudarTema(){
             document.getElementById("section2").style.backgroundImage="url('Assets/IMAGES/bigbus_light.png')";
             document.getElementById("section2_part1").style.backgroundColor="rgba(140, 210, 251, 0.7)";
             document.getElementById("section2_part2").style.backgroundColor="rgba(140, 210, 251, 0.7)";
+            //Section3
+            document.getElementById("section3").style.backgroundColor="#8CD2FB";
             //Section4
             document.getElementById("section4").style.backgroundColor="#8CD2FB";
             //Footer
@@ -160,6 +164,9 @@ function regiao_central () {
     document.getElementById("regiao_central").style.display="block";
 }
 
+//Fim do mapa Interativo
+
+
 // *************************** //
 
 //Animações
@@ -177,7 +184,7 @@ sr.reveal("#button_adjust", {
     origin: "center",
     distance: "0px",
     duration: 750,
-    delay: 250
+    delay: 350
 })
 
 sr.reveal("#section2_part1", {
@@ -192,4 +199,39 @@ sr.reveal("#section2_part2", {
     distance: "0px",
     duration: 1000,
     delay: 600
+})
+
+sr.reveal("#section3 h1", {
+    origin: "top",
+    distance: "15px",
+    duration: 1000,
+    delay: 600
+})
+
+sr.reveal("#section3 p", {
+    origin: "top",
+    distance: "15px",
+    duration: 1000,
+    delay: 600
+})
+
+sr.reveal("#section3 .content", {
+    origin: "center",
+    distance: "0px",
+    duration: 750,
+    delay: 250
+})
+
+sr.reveal("#section4 h1", {
+    origin: "top",
+    distance: "10px",
+    duration: 1000,
+    delay: 500
+})
+
+sr.reveal("#section4_part2", {
+    origin: "center",
+    distance: "0px",
+    duration: 750,
+    delay: 300
 })

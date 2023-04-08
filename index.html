@@ -13,7 +13,7 @@
 <body>
     <main>
         <header>
-            <nav>
+            <nav id="nav1">
                 <div id="header_inicial">
                     <div>
                         <a href="#">
@@ -23,13 +23,36 @@
                 </div>
                 <div id="header_middle">
                     <div>
-                        <a href="#">Home</a>
+                        <a href="#" onclick="options()">Home</a>
                         <a href="#section2">Regiões</a>
-                        <a href="#">Serviços</a>
-                        <a href="#">Contato</a>
+                        <a href="#section3">Serviços</a>
+                        <a href="#section4">Contato</a>
                     </div>
                 </div>
-                <div id="header_end"></div>
+                <div id="header_end">
+                    <nav role='navigation' id="hamburger">
+                        <div id="menuToggle">
+                            <input type="checkbox" />
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <ul id="menu">
+                                <a href="#">
+                                    <li>Home</li>
+                                </a>
+                                <a href="#section2">
+                                    <li>Regiões</li>
+                                </a>
+                                <a href="#">
+                                    <li>Serviços</li>
+                                </a>
+                                <a href="#section4">
+                                    <li>Contato</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
             </nav>
         </header>
         <section id="section1">
@@ -5904,6 +5927,39 @@
             </div>
         </article>
         </section>
+        <section id="section3">
+            <article>
+                <div>
+                    <h1>Serviços</h1>
+                    <p>Me chamo Márcio, sou motorista de fretado e presto serviços para três veículos: Van, micro-ônibus e ônibus. Caso precise de um motorista para realizar sua viagem, só entre em contato comigo!</p>
+                </div>
+                <div class="content">
+                    <div class="slides">
+                        <input type="radio" name="slide" id="slide1" checked>
+                        <input type="radio" name="slide" id="slide2">
+                        <input type="radio" name="slide" id="slide3">
+            
+                        <div class="slide s1">
+                            <img src="Assets/IMAGES/Van.png">
+                        </div>
+            
+                        <div class="slide">
+                            <img src="Assets/IMAGES/Micro-ônibus.png" alt="Imagem de um Micro-ônibus cinza num fundo escuro">
+                        </div>
+            
+                        <div class="slide">
+                            <img src="Assets/IMAGES/Ônibus.png" alt="Imagem de um Ônibus branco ">
+                        </div>
+            
+                        <div class="navigation">
+                            <label for="slide1" class="bar"></label>
+                            <label for="slide2" class="bar"></label>
+                            <label for="slide3" class="bar"></label>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
         <section id="section4">
             <article>
                 <div id="section4_part1">
@@ -5916,11 +5972,11 @@
                         </a>
                         <label for="Whatsapp">(11) 94027-5015</label>
                     </div>
-                    <div>
+                    <div id="facebook">
                         <a href="#" target="_blank">
                             <img src="Assets/IMAGES/Facebook_icon.png">
                         </a>
-                            <label for="Facebook">Marcio Junior</label>
+                            <label for="Facebook"> Marcio Junior</label>
                     </div>
                 </div>
                 <div id="section4_part2">
@@ -5965,10 +6021,10 @@
                 <img src="Assets/IMAGES/smallbus_copy2.png" alt="Desenho de um ônibus">
             </div>
             <nav>
-                <a href="#" class="footer_options">Home</a>
+                <a href="#nav1" class="footer_options">Home</a>
                 <a href="#section2" class="footer_options">Regiões</a>
                 <a href="#" class="footer_options">Serviços</a>
-                <a href="#" class="footer_options">Contato</a>
+                <a href="#section4" class="footer_options">Contato</a>
             </nav>
             <div id="footer_inferior">
                 <h5>© Márcio - Motorista Especial - Copyright 2023 - Todos os direitos reservados - Criado por Matheus Júnior</h5>
