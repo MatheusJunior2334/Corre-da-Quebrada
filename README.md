@@ -5,6 +5,7 @@
 <p align="left">Uma Landing Page desenvolvida por mim dedicada ao meu pai, motorista de serviços especiais quando está fora de seu horário de trabalho formal.
 
 <br>
+<br>
 
 Márcio - Motorista Especial é um site que preza pelo serviço de motorista para viagens diversas, focadas em fretamento, em que o motorista especial - Márcio - presta serviços dirigindo veículos pertencentes ao contratante, que por um motivo não tem um motorista fixo e talvez precise de alguém para realizar esse serviço.
 
@@ -23,7 +24,7 @@ Esse projeto faz parte do "Corre da Quebrada", projeto ministrado pela Professor
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg" alt="jquery" width="60" height="60"/>
 </div>
 
-<br>
+#
 
 <h2 align ="center"> Ferramentas de Apoio</h2>
 <br>
