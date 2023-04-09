@@ -1,4 +1,20 @@
+//Início do Click Scroll Lento
+
+let $root = $('html, body');
+$('a[href^="#"]').click(function() {
+    let href = $.attr(this, 'href');
+    $root.animate({
+        scrollTop: $(href).offset().top
+    }, 500, function() {
+        window.location.hash = href;
+    }); return false;
+});
+
+//Fim do Click Scroll Lento
+
+
 //Início do Tema Escuro
+
 let scroll = document.documentElement //Analisa o HTML e analisa todos os elementos dele e os salva na variável (scroll, nesse caso)
 let lastTheme = "dark";
 let i = 0;
@@ -8,6 +24,8 @@ function mudarTema(){
         case "dark":
             scroll.style.setProperty("--scroll_color", "#eee0e0a2");
             scroll.style.setProperty("--scroll_bg", "#353333")
+            document.getElementById("menu").style.backgroundColor="#494646";
+            document.querySelector("#menu img").style.cssText="filter: invert(1)";
             document.querySelector("body").style.cssText="color: #fff";
             document.querySelector("main").style.backgroundColor="#302D2D";
 
@@ -17,7 +35,7 @@ function mudarTema(){
             document.querySelector("#header_inicial div").style.cssText="background-color: #302d2d";
 
             //Dark Mode
-            document.getElementById("theme").style.backgroundImage="url('Assets/IMAGES/Sun_img.png')";
+            document.getElementById("theme").style.backgroundImage="url('Assets/IMAGES/Moon_img.png')";
 
             //Section1
             document.getElementById("section1").style.backgroundColor="#302D2D";
@@ -54,7 +72,9 @@ function mudarTema(){
         
         case "light":
             scroll.style.setProperty("--scroll_color", "#353333");
-            scroll.style.setProperty("--scroll_bg", "#eee0e0a2")
+            scroll.style.setProperty("--scroll_bg", "#eee0e0a2");
+            document.querySelector("#menu img").style.cssText="filter: invert(0)";
+            document.getElementById("menu").style.backgroundColor="#006FB0";
             document.querySelector("body").style.cssText="color: #000";
             document.querySelector("main").style.backgroundColor="#FFF";
 
@@ -64,7 +84,7 @@ function mudarTema(){
             document.querySelector("#header_inicial div").style.cssText="background-color: #fff";
 
             //Dark Mode Icon
-            document.getElementById("theme").style.backgroundImage="url('Assets/IMAGES/Moon_img.png')";
+            document.getElementById("theme").style.backgroundImage="url('Assets/IMAGES/Sun_img.png')";
 
             //Section1
             document.getElementById("section1").style.backgroundColor="#fff";
@@ -184,6 +204,7 @@ function regiao_central () {
 
 // *************************** //
 
+
 //Animações
 
 window.sr =ScrollReveal({reset: true});
@@ -202,15 +223,8 @@ sr.reveal("#button_adjust", {
     delay: 350
 })
 
-sr.reveal("#section2_part1", {
-    origin: "left",
-    distance: "0px",
-    duration: 1000,
-    delay: 600
-})
-
-sr.reveal("#section2_part2", {
-    origin: "right",
+sr.reveal("#section2", {
+    origin: "center",
     distance: "0px",
     duration: 1000,
     delay: 600

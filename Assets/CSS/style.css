@@ -59,11 +59,7 @@
     border-radius: 5px;
 }
 
-::-webkit-scrollbar-button {
-    background-color: #ffffff;
-}
-
-/*Fim dos Atributos do Scrollbar Navegadores comuns*/
+/*Fim dos Atributos do Scrollbar - Navegadores comuns*/
 
 /*Início do Menu Hamburguer*/
 
@@ -132,6 +128,8 @@
 	width: 300px;
     height: 300px;
 	padding: 50px;
+    border: 2px solid #000;
+    border-radius: 25px;
 	right: -150px;
     top: 0;
     z-index: -1;
@@ -152,10 +150,14 @@
 	opacity: 1;
 }
 
+#hamburger img {
+    width: 20vw;
+}
+
 /*Fim do Menu Hamburguer*/
 
 
-/*Img Troca de Tema*/
+/*Início - IMG Troca de Tema*/
 
 #theme {
     position: fixed;
@@ -163,7 +165,7 @@
     height: 55px;
     bottom: 50%;
     right: 0;
-    background-image: url(../IMAGES/Moon_img.png);
+    background-image: url(../IMAGES/Sun_img.png);
     background-repeat: no-repeat;
     background-size: cover;
     transform: translateY(-50%);
@@ -171,14 +173,11 @@
     transition: 0.5s;
 }
 
-#theme img {
-    width: 45px;
-    height: 50px;
-}
-
 #theme:hover {
     opacity: 80%;
 }
+
+/*Fim - IMG Troca de Tema*/
 
 /*Início da Parte Principal*/
 
@@ -450,6 +449,7 @@ header {
 #section3 {
     width: 100%;
     height: auto;
+    margin-top: 30px;
     background-color: #8CD2FB;
 }
 
@@ -558,7 +558,7 @@ header {
     position: relative;
     width: 100%;
     height: auto;
-    margin-top: 5vh;
+    margin-top: 30px;
     display: flex;
     background-color: #8CD2FB;
 }
@@ -687,7 +687,7 @@ footer {
     position: relative;
     width: 100%;
     height: auto;
-    margin-top: 5vh;
+    margin-top: 40px;
     background-color: #0093E8;
 }
 
@@ -747,12 +747,15 @@ br{display: none;}
     padding: 1vh 0;
 }
 
+/*Fim do Footer*/
 
 /*Início do Responsivo*/
 
-/*Responsivo Laptop*/
+/*Início - Responsivo Laptop*/
 
 @media only screen and (max-width:1280px) {
+
+    /*Header - Laptop*/
 
     #header_inicial {
         width: 25%;
@@ -777,6 +780,20 @@ br{display: none;}
     #header_middle a {
         font-size: 25px;
     }
+
+    /*Section1 - Laptop*/
+
+    #section1 h1 {
+        padding: 25px 0 30px 0;
+    }
+    #button_adjust button {
+        width: auto;
+        height: auto;
+        padding: 15px 25px;
+        font-size: 2.5vw;
+    }
+
+    /*Section2 - Laptop*/
 
     #section2 {
         height: 640px;
@@ -803,7 +820,7 @@ br{display: none;}
         padding: 0;
     }
 
-    /*Section3 Laptop*/
+    /*Section3 - Laptop*/
 
     #section3 p {
         font-size: 25px;
@@ -827,12 +844,30 @@ br{display: none;}
     #section4 h2 {font-size: 30px;}
 
     #submit, #submit input {width: auto;}
+
+    /*Footer - Laptop*/
+
+    #footer_superior h1 {
+        font-size: 3.7vw;
+    }
+
+    footer a {
+        font-size: 25px;
+    }
+
+    #footer_inferior h5 {
+        font-size: 2vw;
+    }
 }
-/*Responsivo Tablet*/
+
+/*Fim - Responsivo Laptop*/
+
+
+/*Início - Responsivo Tablet*/
 
 @media only screen and (max-width:768px) {
 
-    /*Header Tablet*/
+    /*Header - Tablet*/
 
     #header_inicial {
         width: 30%;
@@ -857,7 +892,7 @@ br{display: none;}
         width: 10%;
     }
 
-    /*Section1 Tablet*/
+    /*Section1 - Tablet*/
 
     #section1 h1 {
         padding: 15px 0 20px 0;
@@ -874,7 +909,7 @@ br{display: none;}
         font-size: 2.5vw;
     }
 
-    /*Section2 Tablet*/
+    /*Section2 - Tablet*/
 
     #section2 {
         height: 500px;
@@ -910,7 +945,7 @@ br{display: none;}
 
     #section2 #regiao_nome {font-size: 25px;}
 
-    /*Section3 Tablet*/
+    /*Section3 - Tablet*/
 
     #section3 article {
         width: 85%;
@@ -920,26 +955,34 @@ br{display: none;}
 
     #section3 p {font-size: 22px;}
 
+    .bar {
+        margin: 0 8px 0px 8px;
+    }
+
     #section3 .content {
         width: 65vw;
     }
 
-    /*Section4 Tablet*/
+    /*Section4 - Tablet*/
 
     #section4 article {
         flex-direction: column;
     }
 
 
-    #section4_part1, #section4_part2 {
+    #section4_part1 {
         width: 70%;
+        margin: auto;
+    }
+
+    #section4_part2 {
+        width: 85%;
         margin: auto;
     }
 
     #section4_part1 label {
         width: auto;
     }
-
 
     #section4 h1 {font-size: 45px;}
 
@@ -948,9 +991,8 @@ br{display: none;}
     #section4 h2 {font-size: 35px;}
 
     #section4 input, textarea {font-size: 14px;}
-
    
-    /*Footer Tablet*/
+    /*Footer - Tablet*/
 
     footer h1 {
         font-size: 25px;
@@ -962,7 +1004,7 @@ br{display: none;}
     }
 
     footer a {
-        font-size: 15px;
+        font-size: 18px;
     }
 
     br {display: block;}
@@ -971,3 +1013,162 @@ br{display: none;}
         font-size: 12px;
     }
 }
+
+/*Início - Responsivo Celular*/
+
+@media only screen and (max-width:480px) {
+
+    /*Header - Celular*/
+
+    #header_inicial {
+        width: 45%;
+    }
+
+    #header_inicial img {
+        width: 38vw;
+    }
+    #header_middle {
+        width: 40%;
+    }
+
+    #header_end {
+        width: 15%;
+    }
+
+    /*Section1 - Celular*/
+
+    .div_type1 {
+        padding: 30px 10px;
+    }
+
+    #section1 h1 {
+        font-size: 6vw;
+    }
+
+    #section1 img {
+        width: 50vw;
+    }
+
+    #button_adjust, #button_adjust button {
+        width: 95%;
+        font-size: 20px;
+        padding: 10px 0;
+        opacity: 100%;
+        z-index: 1;
+    }
+
+    #button_adjust {
+        position: fixed;
+    }
+
+    /*Section2 - Celular*/
+
+    #section2 {
+        height: auto;
+    }
+
+    #section2_part1 {
+        width: 100%;
+        height: 50%;
+        margin: 0;
+        padding: 0;
+        float: none;
+    }
+
+    #section2 svg {
+        padding: 0;
+    }
+
+    #section2_part2 {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        float: none;
+    }
+
+    #section2 article {
+        width: 90%;
+        padding: 0;
+        margin: 0;
+        margin: auto;
+    }
+
+    #section2 h1 {
+        margin: 0;
+    }
+
+    #regiao_nome {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        float: none;
+    }
+
+    #regiao_nome img {
+        width: 65vw;
+        margin: auto;
+        margin-top: 15px;
+    }
+
+    #regiao_descricao {
+        padding: 0;
+    }
+
+    #regiao_descricao img {
+        width: 60vw;
+    }
+
+    /*Section3 - Celular*/
+
+    #section3 .content {
+        width: 85vw;
+    }
+
+    /*Section4 - Celular*/
+
+    #section4_part1 {
+        width: 85%;
+    }
+
+    #section4_part2 {
+        width: 90%;
+    }
+
+    /*Footer - Celular*/
+
+    footer {
+        z-index: 2;
+    }
+    footer h1 {
+        margin: auto;
+    }
+
+    footer img {
+        padding: 0;
+        margin: auto;
+    }
+
+    #footer_superior {
+        width: 90%;
+    }
+
+    #footer_superior h1 {
+        font-size: 20px;
+    }
+
+    footer nav {
+        width: 90%;
+    }
+
+    #footer_inferior h5 {
+        font-size: 14px;
+    }
+}
+
+/*Fim - Responsivo Celular*/
+
+/*Fim do Responsivo*/
+
+/*Fim da Parte Principal*/
