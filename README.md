@@ -8,8 +8,6 @@
 
 Márcio - Motorista Especial é um site que preza pelo serviço de motorista para viagens diversas, focadas em fretamento, em que o motorista especial - Márcio - presta serviços dirigindo veículos pertencentes ao contratante, que por um motivo não tem um motorista fixo e talvez precise de alguém para realizar esse serviço.
 
-<br>
-
 Esse projeto faz parte do "Corre da Quebrada", projeto ministrado pela Professora Débora no Instituto PROA; esse também é o nosso primeiro projeto individual e gostaria de agradecer a todos do PROA, pois eles foram essenciais para o meu desenvolvimento.
 </p>
 
