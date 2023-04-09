@@ -63,7 +63,7 @@ function mudarTema(){
                // document.getElementById(`investimento${i+1}`).style.backgroundColor="#262626"; O $ serve para colocar uma variável dentro da string, e é necessário que a variável esteja entre uma chave e a variávl dentro dos parênteses deve estar dentro de uma crase
             }
 
-            for (i=0; i<=3; i++){
+            for (i=0; i<=7; i++){
                 document.getElementsByClassName("footer_options")[i].style.color="#fff";
             }
 
@@ -112,7 +112,7 @@ function mudarTema(){
                 document.getElementsByClassName("text_color2")[i].style.cssText="color: #000";
             }
 
-            for (i=0; i<=3; i++){
+            for (i=0; i<=7; i++){
                 document.getElementsByClassName("footer_options")[i].style.color="#000";
             }
 

@@ -156,14 +156,14 @@
 
 #theme {
     position: fixed;
-    width: 55px;
-    height: 55px;
-    bottom: 50%;
+    width: 45px;
+    height: 45px;
+    bottom: 60%;
     right: 0;
     background-image: url(../IMAGES/Sun_img.png);
     background-repeat: no-repeat;
     background-size: cover;
-    transform: translateY(-50%);
+    transform: translateY(-40%);
     z-index: 1;
     transition: 0.5s;
 }
@@ -694,6 +694,10 @@ footer {
     background-color: #0093E8;
 }
 
+#footer2 {
+    display: none;
+}
+
 #footer_superior {
     width: 85%;
     height: auto;
@@ -998,7 +1002,7 @@ br{display: none;}
     /*Footer - Tablet*/
 
     footer h1 {
-        font-size: 25px;
+        font-size: 30px;
     }
 
     footer img {
@@ -1006,14 +1010,18 @@ br{display: none;}
         height: auto;
     }
 
+    footer nav {
+        width: 80%;
+    }
+
     footer a {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     br {display: block;}
 
     #footer_inferior h5 {
-        font-size: 12px;
+        font-size: 15px;
     }
 }
 
@@ -1030,6 +1038,7 @@ br{display: none;}
     #header_inicial img {
         width: 38vw;
     }
+
     #header_middle {
         width: 40%;
     }
@@ -1044,6 +1053,7 @@ br{display: none;}
         display: flex;
         flex-direction: column;
     }
+
     .div_type1 {
         width: 85%;
         padding: 0;
@@ -1061,7 +1071,7 @@ br{display: none;}
     }
 
     #button_adjust, #button_adjust button {
-        width: 95%;
+        width: 90%;
         font-size: 20px;
         padding: 10px 0;
         opacity: 100%;
@@ -1070,12 +1080,17 @@ br{display: none;}
 
     #button_adjust {
         position: fixed;
+        width: 100%;
+        left: 0;
     }
 
     /*Section2 - Celular*/
 
     #section2 {
+        display: flex;
+        flex-direction: column-reverse;
         height: auto;
+        z-index: 0;
     }
 
     #section2_part1 {
@@ -1152,29 +1167,59 @@ br{display: none;}
     footer {
         z-index: 2;
     }
+
+    #footer1 {
+        display: none;
+    }
+
+    #footer2 {
+        display: flex;
+    }
+
     footer h1 {
         margin: auto;
     }
 
     footer img {
-        padding: 0;
+        padding: 0px 0 5px 0;
         margin: auto;
+        width: 70px;
     }
 
     #footer_superior {
         width: 90%;
+        display: flex;
+        flex-direction: column-reverse;
     }
 
     #footer_superior h1 {
-        font-size: 20px;
+        font-size: 7vw;
     }
 
     footer nav {
-        width: 90%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 15px 0 0 0;
+    }
+
+    footer div {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin: auto;
+    }
+
+    footer a {
+        width: 50%;
+        font-size: 22px;
+        margin-bottom: 20px;
     }
 
     #footer_inferior h5 {
         font-size: 14px;
+        margin: 0;
     }
 }
 

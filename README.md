@@ -10,7 +10,7 @@ Márcio - Motorista Especial é um site que preza pelo serviço de motorista par
 
 <br>
 
-Esse projeto faz parte do "Corre da Quebrada", projeto ministrado pela Professora Débora no Instituto PROA; esse é o primeiro projeto individual.
+Esse projeto faz parte do "Corre da Quebrada", projeto ministrado pela Professora Débora no Instituto PROA; esse também é o nosso primeiro projeto individual, e gostaria de agradecer a todos do PROA, pois eles foram essenciais para o meu desenvolvimento.
 </p>
 
 #
