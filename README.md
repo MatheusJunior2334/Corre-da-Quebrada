@@ -2,15 +2,15 @@
           
 # Márcio - Motorista Especial
 <img src="Assets/IMAGES/Márcio - Motorista Especial img.png">
-<p align="left">Uma Landing Page desenvolvida por mim dedicada ao meu pai, motorista de serviços especiais fora de seu horário de trabalho formal
+<p align="left">Uma Landing Page desenvolvida por mim dedicada ao meu pai, motorista de serviços especiais quando está fora de seu horário de trabalho formal.
 
 <br>
 
-Márcio - Motorista Especial é um site que preza pelo serviço de motorista para viagens diversas, focadas em fretamento, em que o motorista especial - Márcio - presta serviços para diferentes veículos pertencentes ao contratante que não tem um motorista fixo e precisse de alguém para realizar esse serviço.
+Márcio - Motorista Especial é um site que preza pelo serviço de motorista para viagens diversas, focadas em fretamento, em que o motorista especial - Márcio - presta serviços dirigindo veículos pertencentes ao contratante, que por um motivo não tem um motorista fixo e talvez precise de alguém para realizar esse serviço.
 
 <br>
 
-Esse projeto faz parte do "Corre da Quebrada", projeto ministrado pela Professora Débora no Instituto PROA; esse também é o nosso primeiro projeto individual, e gostaria de agradecer a todos do PROA, pois eles foram essenciais para o meu desenvolvimento.
+Esse projeto faz parte do "Corre da Quebrada", projeto ministrado pela Professora Débora no Instituto PROA; esse também é o nosso primeiro projeto individual e gostaria de agradecer a todos do PROA, pois eles foram essenciais para o meu desenvolvimento.
 </p>
 
 #
@@ -54,8 +54,4 @@ Esse projeto faz parte do "Corre da Quebrada", projeto ministrado pela Professor
     <a href="https://www.linkedin.com/in/matheus-j%C3%BAnior-770746235/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="50" height="50"/>
     </a>
 </p>
-
-
-          
-
 
