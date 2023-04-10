@@ -59,18 +59,18 @@
 /*Início do Menu Hamburguer*/
 
 #menuToggle {
+    position: relative;
 	display: block;
-	position: relative;
 	-webkit-user-select: none;
 	user-select: none;
     z-index: 1;
 }
 
 #menuToggle input {
+    position: absolute;
 	display: block;
 	width: 40px;
 	height: 32px;
-    position: absolute;
     margin-top: 1px;
 	cursor: pointer;
 	opacity: 0;
@@ -947,7 +947,7 @@ br{display: none;}
         text-align: center;
     }
 
-    #section2 h1 {font-size: 30px;}
+    #section2 h1 {font-size: 40px;}
 
     #section2 p {font-size: 20px;}
 
@@ -961,7 +961,7 @@ br{display: none;}
         width: 85%;
     }
 
-    #section3 h1 {font-size: 45px;}
+    #section3 h1 {font-size: 40px;}
 
     #section3 p {font-size: 22px;}
 
@@ -979,7 +979,6 @@ br{display: none;}
         flex-direction: column;
     }
 
-
     #section4_part1 {
         width: 70%;
         margin: auto;
@@ -994,11 +993,11 @@ br{display: none;}
         width: auto;
     }
 
-    #section4 h1 {font-size: 45px;}
+    #section4 h1 {font-size: 40px;}
 
     #section4 p, #section4 label {font-size: 20px;}
 
-    #section4 h2 {font-size: 35px;}
+    #section4 h2 {font-size: 28px;}
 
     #section4 input, textarea {font-size: 14px;}
    
@@ -1058,7 +1057,7 @@ br{display: none;}
     }
 
     .div_type1 {
-        width: 85%;
+        width: 90%;
         padding: 0;
         text-align: center;
         margin: auto;
@@ -1069,7 +1068,7 @@ br{display: none;}
     }
 
     #section1 img {
-        width: 78vw;
+        width: 85vw;
         margin-bottom: 25px;
     }
 
@@ -1151,14 +1150,17 @@ br{display: none;}
 
     /*Section3 - Celular*/
 
+    #section3 article {
+        width: 90%;
+    }
     #section3 .content {
-        width: 85vw;
+        width: 90vw;
     }
 
     /*Section4 - Celular*/
 
     #section4_part1 {
-        width: 85%;
+        width: 90%;
     }
 
     #section4_part2 {
