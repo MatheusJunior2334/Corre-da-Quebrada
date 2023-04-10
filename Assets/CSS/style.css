@@ -295,7 +295,7 @@ header {
     border: 2px solid #000;
     border-radius: 20px;
     width: 65%;
-    height: 8vh;
+    padding: 1.5% 0;
     font-size: 2vw;
     opacity: 95%;
     transition: all 0.3s;
@@ -384,6 +384,7 @@ header {
 
 #section2 h1 {
     margin-top: 2vh;
+    padding-bottom: 10px;
     font-size: 4vw;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     text-align: center;
@@ -475,7 +476,7 @@ header {
 
 .content {
     position: relative;
-    width: 60vw;
+    width: 65vw;
     height: auto;
     border-radius: 20px;
     overflow: hidden;
@@ -833,6 +834,8 @@ br{display: none;}
         font-size: 25px;
     }
 
+    /*Section4 Laptop*/
+
     #section4_part1 div {
         width: auto;
         justify-content: center;
@@ -967,7 +970,7 @@ br{display: none;}
     }
 
     #section3 .content {
-        width: 65vw;
+        width: 70vw;
     }
 
     /*Section4 - Tablet*/
@@ -1066,7 +1069,7 @@ br{display: none;}
     }
 
     #section1 img {
-        width: 70vw;
+        width: 78vw;
         margin-bottom: 25px;
     }
 
@@ -1133,7 +1136,7 @@ br{display: none;}
     }
 
     #regiao_nome img {
-        width: 65vw;
+        width: 75vw;
         margin: auto;
         margin-top: 15px;
     }
