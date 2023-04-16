@@ -39,30 +39,31 @@ function mudarTema(){
 
             //Section1
             document.getElementById("section1").style.backgroundColor="#302D2D";
-            document.getElementById("big_img").style.border="1px solid #0D09B8";
+            document.getElementById("big_img").style.border="2px solid #025930";
 
             //Section2
             document.getElementById("section2").style.backgroundImage="url('/Assets/IMAGES/bigbus_dark.png')";
-            document.getElementById("section2_part1").style.backgroundColor="rgba(0, 147, 232, 0.4)";
-            document.getElementById("section2_part2").style.backgroundColor="rgba(0, 147, 232, 0.4)";
+            document.getElementById("section2_part1").style.backgroundColor="rgba(4, 131, 71, 0.25)";
+            document.getElementById("section2_part2").style.backgroundColor="rgba(4, 131, 71, 0.25)";
 
             //Section3
-            document.getElementById("section3").style.backgroundColor="#007BC2";
+            document.getElementById("section3").style.backgroundColor="#048347";
 
             //Section4
-            document.getElementById("section4").style.backgroundColor="#007BC2";
+            document.getElementById("section4").style.backgroundColor="#048347";
 
             //Footer
             document.querySelector("footer").style.backgroundColor="#494646";
             document.getElementById("footer_superior").style.cssText="border-bottom: 1px solid #fff";
             document.querySelector("footer img").style.cssText="filter: invert(1)";
             
-            for (i=0; i<=1; i++){
-                document.getElementsByClassName("text_color")[i].style.cssText="color: #00A2FF";
+            for (i=0; i<=1; i++) {
+                document.getElementsByClassName("text_color")[i].style.cssText="color: #0ED145";
                // document.getElementById(`investimento${i+1}`).style.backgroundColor="#262626"; O $ serve para colocar uma variável dentro da string, e é necessário que a variável esteja entre uma chave e a variávl dentro dos parênteses deve estar dentro de uma crase
             }
 
-            for (i=0; i<=7; i++){
+            for (i=0; i<=7; i++) {
+                document.getElementsByClassName("header_options")[i].style.color="#fff";
                 document.getElementsByClassName("footer_options")[i].style.color="#fff";
             }
 
@@ -73,12 +74,12 @@ function mudarTema(){
             scroll.style.setProperty("--scroll_color", "#353333");
             scroll.style.setProperty("--scroll_bg", "#eee0e0a2");
             document.querySelector("#menu img").style.cssText="filter: invert(0)";
-            document.getElementById("menu").style.backgroundColor="#006FB0";
+            document.getElementById("menu").style.backgroundColor="#0ED145";
             document.querySelector("body").style.cssText="color: #000";
             document.querySelector("main").style.backgroundColor="#FFF";
 
             //Header
-            document.querySelector("header").style.backgroundColor="#006FB0";
+            document.querySelector("header").style.backgroundColor="#0ED145";
             document.querySelector("header img").style.cssText="filter: invert(0)";
             document.querySelector("#header_inicial div").style.cssText="background-color: #fff";
 
@@ -87,30 +88,31 @@ function mudarTema(){
 
             //Section1
             document.getElementById("section1").style.backgroundColor="#fff";
-            document.getElementById("big_img").style.border="1px solid #0093E8";
+            document.getElementById("big_img").style.border="2px solid #025930";
 
             //Section2
             document.getElementById("section2").style.backgroundImage="url('Assets/IMAGES/bigbus_light.png')";
-            document.getElementById("section2_part1").style.backgroundColor="rgba(140, 210, 251, 0.7)";
-            document.getElementById("section2_part2").style.backgroundColor="rgba(140, 210, 251, 0.7)";
+            document.getElementById("section2_part1").style.backgroundColor="rgba(69, 255, 122, 0.4)";
+            document.getElementById("section2_part2").style.backgroundColor="rgba(69, 255, 122, 0.4)";
 
             //Section3
-            document.getElementById("section3").style.backgroundColor="#8CD2FB";
+            document.getElementById("section3").style.backgroundColor="rgba(69, 255, 122, 0.5)";
 
             //Section4
-            document.getElementById("section4").style.backgroundColor="#8CD2FB";
+            document.getElementById("section4").style.backgroundColor="rgba(69, 255, 122, 0.5)";
 
             //Footer
-            document.querySelector("footer").style.backgroundColor="#0093E8";
+            document.querySelector("footer").style.backgroundColor="#0ED145";
             document.getElementById("footer_superior").style.cssText="border-bottom: 1px solid #000";
             document.querySelector("footer img").style.cssText="filter: invert(0)";
             
 
-            for (i=0; i<=1; i++){
-                document.getElementsByClassName("text_color")[i].style.cssText="color: #0D09B8";
+            for (i=0; i<=1; i++) {
+                document.getElementsByClassName("text_color")[i].style.cssText="color: #025930";
             }
 
-            for (i=0; i<=7; i++){
+            for (i=0; i<=7; i++) {
+                document.getElementsByClassName("header_options")[i].style.color="#000";
                 document.getElementsByClassName("footer_options")[i].style.color="#000";
             }
 

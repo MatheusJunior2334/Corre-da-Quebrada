@@ -118,7 +118,7 @@
 
 #menu {
 	position: fixed;
-    background-color: #006FB0;
+    background-color: #0ED145;
     max-width: 250px;
 	width: 300px;
     height: 300px;
@@ -187,13 +187,16 @@ a {
     text-decoration: none;
 }
 
+p {
+    font-family: Arial;
+}
+
 /*Início do Header*/
 
 header {
     width: 100%;
     height: auto;
-    border-bottom: 2px solid #000;
-    background-color: #006FB0;
+    background-color: #0ED145;
 }
 
 #nav1 {
@@ -236,8 +239,11 @@ header {
 }
 
 #header_middle a {
-    color: #ffffff;
-    font-size: 1.55vw;
+    font-size: 1.7vw;
+}
+
+.header_options {
+    color: #000;
 }
 
 #header_middle a:hover {
@@ -274,7 +280,7 @@ header {
 
 .div_type1 img {
     width: 45vw;
-    border: 1px solid #0093E8;
+    border: 2px solid #025930;
     border-radius: 15px;
 }
 
@@ -291,8 +297,8 @@ header {
 }
 
 #button_adjust button {
-    background-color: #0093E8;
-    border: 2px solid #000;
+    background-color: #45FF7A;
+    border: 1px solid #151515;
     border-radius: 20px;
     width: 65%;
     padding: 1.5% 0;
@@ -303,22 +309,23 @@ header {
 
 #button_adjust button:hover {
     opacity: 100%;
-    background-color: #086397;
-    border: 2px solid #086397;
+    background-color: #025930;
+    border: 1px solid #025930;
     transform: scale(1.05);
 }
 
 #button_adjust button a {
     transition: 0.5s;
+    color: #000;
 }
 
 #button_adjust button a:hover {
-    color: #000;
+    color: #fff;
     transition: 1s;
 }
 
 .text_color {
-    color: #0D09B8;
+    color: #025930;
 }
 
 /*Fim da Section1*/
@@ -345,7 +352,7 @@ header {
     margin-top: 30px;
     margin-bottom: 30px;
     padding: 1vh 0;
-    background-color: rgba(140, 210, 251, 0.7);
+    background-color: rgba(69, 255, 122, 0.4);
     opacity: 100%;
     z-index: 1;
     float: left;
@@ -376,7 +383,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: rgba(140, 210, 251, 0.7);
+    background-color: rgba(69, 255, 122, 0.4);
     opacity: 100%;
     z-index: 1;
     float: right;
@@ -386,7 +393,6 @@ header {
     margin-top: 2vh;
     padding-bottom: 10px;
     font-size: 4vw;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     text-align: center;
     font-family: work_sans;
 }
@@ -419,11 +425,12 @@ header {
 
 #regiao_descricao ul {
     float: left;
+    font-family: Arial;
 }
 
 #regiao_descricao img {
-    width: 28vw;
-    padding-right: 5%;
+    width: 26vw;
+    padding-right: 3%;
     float: right;
 }
 
@@ -446,7 +453,7 @@ header {
     width: 100%;
     height: auto;
     margin-top: 30px;
-    background-color: #8CD2FB;
+    background-color: rgba(69, 255, 122, 0.5);
 }
 
 #section3 article {
@@ -459,17 +466,11 @@ header {
     text-align: center;
     font-size: 4vw;
     font-family: work_sans;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 #section3 p {
     font-size: 1.8vw;
     margin-top: 30px;
-}
-
-#section3 .text_color2 {
-    font-weight: bold;
-    text-decoration: underline;
 }
 
 /*Início do Carrossel*/
@@ -494,17 +495,17 @@ header {
 }
 
 .bar {
-    width: 70px;
-    height: 17px;
-    border: 2px solid #0093E8;
-    border-radius: 5px;
-    margin: 6px;
+    width: 120px;
+    height: 25px;
+    border: 3px solid #048347;
+    border-radius: 10px;
+    margin: 0 45px;
     cursor: pointer;
     transition: 0.4s;
 }
 
 .bar:hover {
-    background-color: #0093E8;
+    background-color: #048347;
 }
 
 #section3 input {
@@ -539,10 +540,6 @@ header {
     margin-left: -40%;
 }
 
-#slide1:checked ~ .bar {
-    background-color: #0D09B8;
-}
-
 /*Fim do Carrossel*/
 
 /*Fim da Section3*/
@@ -556,7 +553,7 @@ header {
     height: auto;
     margin-top: 30px;
     display: flex;
-    background-color: #8CD2FB;
+    background-color: rgba(69, 255, 122, 0.5);
 }
 
 #section4 article {
@@ -574,7 +571,6 @@ header {
     font-size: 4vw;
     font-family: work_sans;
     text-align: center;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 #section4_part1 h2 {
@@ -617,6 +613,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    cursor: auto;
 }
 
 #section4_part2 {
@@ -633,13 +630,13 @@ header {
 
 #section4_part2 label{
     font-size: 2vw;
-    font-family: work_sans;
+    font-family: arial;
     -webkit-text-stroke: 0.3px #000;
 }
 
 #section4_part2 input, textarea {
     font-size: 1.2vw;
-    font-family: work_sans;
+    font-family: arial;
     text-indent: 5px;
     border-radius: 5px;
     border: 0;
@@ -692,7 +689,7 @@ footer {
     width: 100%;
     height: auto;
     margin-top: 40px;
-    background-color: #0093E8;
+    background-color: #0ED145;
 }
 
 #footer2 {
@@ -707,6 +704,7 @@ footer {
     border-bottom: 1px solid #000;
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 footer img {
@@ -717,7 +715,6 @@ footer img {
 footer h1 {
     font-size: 3vw;
     font-family: yeon_sung;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 footer nav {
@@ -742,9 +739,33 @@ footer a:hover {
 #footer_inferior {
     width: 100%;
     height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     text-align: center;
     background-color: #2B1E1E;
     color: #D7F8EE;
+}
+
+#footer_inferior div {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 1%;
+}
+
+#footer_inferior img {
+    width: 3vw;
+    padding: 5px 0; 
+}
+
+#footer_inferior a {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 br{display: none;}
@@ -753,6 +774,7 @@ br{display: none;}
     font-size: 1.3vw;
     font-weight: normal;
     padding: 1vh 0;
+    margin: auto;
 }
 
 /*Fim do Footer*/
@@ -794,6 +816,7 @@ br{display: none;}
     #section1 h1 {
         padding: 25px 0 30px 0;
     }
+
     #button_adjust button {
         width: auto;
         height: auto;
@@ -820,8 +843,8 @@ br{display: none;}
     }
 
     #regiao_descricao img {
-        width: 25vw;
-        padding-right: 3%;
+        width: 22vw;
+        padding-right: 2%;
     }
 
     #regiao_leste, #regiao_norte, #regiao_oeste, #regiao_sudeste, #regiao_sudoeste, #regiao_central {
@@ -832,6 +855,16 @@ br{display: none;}
 
     #section3 p {
         font-size: 25px;
+    }
+
+    .bar {
+        width: 100px;
+        height: 20px;
+        border: 3px solid #048347;
+        border-radius: 10px;
+        margin: 0 15px;
+        cursor: pointer;
+        transition: 0.4s;
     }
 
     /*Section4 Laptop*/
@@ -966,6 +999,13 @@ br{display: none;}
     #section3 p {font-size: 22px;}
 
     .bar {
+        width: 85px;
+        height: 20px;
+        border: 3px solid #048347;
+        border-radius: 10px;
+        margin: 0 45px;
+        cursor: pointer;
+        transition: 0.4s;
         margin: 0 8px 0px 8px;
     }
 
@@ -1024,6 +1064,11 @@ br{display: none;}
 
     #footer_inferior h5 {
         font-size: 15px;
+    }
+
+    #footer_inferior img {
+        width: 5vw;
+        padding: 0;
     }
 }
 
@@ -1157,6 +1202,16 @@ br{display: none;}
         width: 90vw;
     }
 
+    .bar {
+        width: 65px;
+        height: 15px;
+        border: 2px solid #048347;
+        border-radius: 8px;
+        margin: 0 6px;
+        cursor: pointer;
+        transition: 0.4s;
+    }
+
     /*Section4 - Celular*/
 
     #section4_part1 {
@@ -1209,14 +1264,14 @@ br{display: none;}
         padding: 15px 0 0 0;
     }
 
-    footer div {
+    #footer2 div {
         width: 100%;
         display: flex;
         justify-content: space-around;
         margin: auto;
     }
 
-    footer a {
+    #footer2 a {
         width: 50%;
         font-size: 22px;
         margin-bottom: 20px;
@@ -1224,7 +1279,12 @@ br{display: none;}
 
     #footer_inferior h5 {
         font-size: 14px;
-        margin: 0;
+        margin: auto;
+    }
+
+    #footer_inferior img {
+        width: 7vw;
+        padding: 0;
     }
 }
 
