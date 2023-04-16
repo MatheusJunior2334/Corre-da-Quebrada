@@ -777,6 +777,10 @@ br{display: none;}
     margin: auto;
 }
 
+#footer_inferior #footer_inferior2 {
+    display: none;
+}
+
 /*Fim do Footer*/
 
 /*Início do Responsivo*/
@@ -1277,14 +1281,37 @@ br{display: none;}
         margin-bottom: 20px;
     }
 
+    #footer_inferior {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #footer_inferior div {
+        display: flex;
+    }
+
     #footer_inferior h5 {
         font-size: 14px;
         margin: auto;
     }
 
     #footer_inferior img {
-        width: 7vw;
+        width: 35px;
         padding: 0;
+    }
+
+    #footer_inferior .footer_inferior1 {
+        display: none;
+    }
+
+    #footer_inferior #footer_inferior2 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #footer_inferior #footer_inferior2 a {
+        width: auto;
+        padding: 5px 20px;
     }
 }
 
