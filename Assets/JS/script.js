@@ -39,11 +39,10 @@ function mudarTema(){
 
             //Section1
             document.getElementById("section1").style.backgroundColor="#302D2D";
-            document.querySelector("#button_adjust button").style.backgroundColor="#048347";
+            document.querySelector("#button_adjust button").style.cssText= "background-color: #008732; border: 1px solid #048347";
             document.getElementById("big_img").style.border="2px solid #025930";
 
             //Section2
-            //document.getElementById("section2").style.backgroundImage="url('/Assets/IMAGES/bigbus_dark.png')";
             document.getElementById("section2_part1").style.backgroundColor="rgba(4, 131, 71, 1)";
             document.getElementById("section2_part2").style.backgroundColor="rgba(4, 131, 71, 1)";
 
@@ -83,11 +82,10 @@ function mudarTema(){
 
             //Section1
             document.getElementById("section1").style.backgroundColor="#fff";
-            document.querySelector("#button_adjust button").style.backgroundColor="#025930";
+            document.querySelector("#button_adjust button").style.cssText="background-color: #025930; border: 0";
             document.getElementById("big_img").style.border="2px solid #025930";
 
             //Section2
-           // document.getElementById("section2").style.backgroundImage="url('Assets/IMAGES/bigbus_light.png')";
             document.getElementById("section2_part1").style.backgroundColor="rgba(69, 255, 122, 1)";
             document.getElementById("section2_part2").style.backgroundColor="rgba(69, 255, 122, 1)";
 
