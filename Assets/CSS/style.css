@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: yeon_sung;
-    src: url(/Assets/FONTS/Yeon_Sung/YeonSung-Regular.ttf);
+    src: url(/Assets/FONTS/harlowef-solid-maisfontes.70fa/harlowef-solid.otf);
 }
 
 @font-face {
@@ -17,12 +17,23 @@
 @keyframes effect1 {
     from {
         opacity: 0;
-        margin-left: 1%;
+        transform:  translate(-200px, 0px) rotate(-180deg);
     }
 
     to {
         opacity: 1;
-        margin-left: 0;
+    }
+}
+
+@keyframes effect2 {
+    from {
+        opacity: 0;
+       ;
+    }
+
+    to {
+        opacity: 1;
+
     }
 }
 
@@ -118,12 +129,12 @@
 
 #menu {
 	position: fixed;
-    background-color: #0ED145;
+    background-color: #048347;
     max-width: 250px;
 	width: 300px;
-    height: 300px;
+    height: 350px;
 	padding: 50px;
-    border: 2px solid #000;
+    border: 1px solid #000;
     border-radius: 25px;
 	right: -150px;
     top: 0;
@@ -135,8 +146,13 @@
 	transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
 }
 
+#menu img {
+    position: relative;
+    filter: invert(1);
+}
+
 #menu li {
-	padding: 10px 0;
+	padding: 15px 0;
 	font-size: 22px;
 }
 
@@ -185,6 +201,7 @@ main {
 a {
     color: #fffafa;
     text-decoration: none;
+    font-family: arial;
 }
 
 p {
@@ -196,7 +213,7 @@ p {
 header {
     width: 100%;
     height: auto;
-    background-color: #0ED145;
+    background-color: #048347;
 }
 
 #nav1 {
@@ -208,20 +225,24 @@ header {
 #header_inicial {
     width: 20%;
     height: auto;
-    padding: 10px 0;
+    padding: 5px 0;
 }
 
 #header_inicial div {
-    width: 85%;
+    width: 40%;
     height: auto;
     margin: auto;
-    border-radius: 30px;
+    border-radius: 65px;
     background-color: #fff;
     transition: 1s;
+    animation-name: effect1;
+    animation-duration: 1.2s;
+    animation-timing-function: linear;
 }
 
 #header_inicial img {
-    width: 17vw;
+    width: 8vw;
+    filter: invert(1);
 }
 
 #header_middle {
@@ -240,10 +261,10 @@ header {
 
 #header_middle a {
     font-size: 1.7vw;
-}
-
-.header_options {
-    color: #000;
+    color: #fff;
+    animation-name: effect2;
+    animation-duration: 1.2s;
+    animation-timing-function: linear;
 }
 
 #header_middle a:hover {
@@ -297,31 +318,29 @@ header {
 }
 
 #button_adjust button {
-    background-color: #45FF7A;
-    border: 1px solid #151515;
-    border-radius: 20px;
     width: 65%;
+    background-color: #025930;
+    border: 0;
+    border-radius: 20px;
     padding: 1.5% 0;
     font-size: 2vw;
-    opacity: 95%;
+    opacity: 100%;
     transition: all 0.3s;
 }
 
 #button_adjust button:hover {
     opacity: 100%;
-    background-color: #025930;
-    border: 1px solid #025930;
     transform: scale(1.05);
 }
 
 #button_adjust button a {
+    width: 100%;
     transition: 0.5s;
-    color: #000;
+    color: #fff;
 }
 
 #button_adjust button a:hover {
-    color: #fff;
-    transition: 1s;
+    text-decoration: underline;
 }
 
 .text_color {
@@ -335,10 +354,7 @@ header {
 #section2 {
     position: relative;
     width: 100%;
-    height: 800px;
-    background-image: url(../IMAGES/bigbus_light.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    height: 650px;
 }
 
 #section2 article {
@@ -348,24 +364,28 @@ header {
 
 #section2_part1 {
     width: 50%;
-    height: 88%;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    height: 100%;
     padding: 1vh 0;
-    background-color: rgba(69, 255, 122, 0.4);
+    background-color: rgba(69, 255, 122, 1);
     opacity: 100%;
     z-index: 1;
     float: left;
 }
 
 #section2_part1 svg {
-    width: 94%;
-    height: 100%;
+    width: 95%;
+    height: 85%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-left: 3%;
-    background-color: rgba(255, 255, 255, 0.0);
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#section2_part1 h3 {
+    font-size: 1.6vw;
+    font-family: work_sans;
+    text-align: center;
 }
 
 
@@ -376,14 +396,12 @@ header {
 
 #section2_part2 {
     width: 50%;
-    height: 88%;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    height: 100%;
     padding: 1vh 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: rgba(69, 255, 122, 0.4);
+    background-color: rgba(69, 255, 122, 1);
     opacity: 100%;
     z-index: 1;
     float: right;
@@ -414,24 +432,19 @@ header {
     margin-top: 3%;
 }
 
-#regiao_descricao p {
-    display: none;
-}
-
 #regiao_descricao {
     width: 100%;
     margin-top: 5vh;
+    text-align: center;
 }
 
 #regiao_descricao ul {
-    float: left;
+    display: none;
     font-family: Arial;
 }
 
 #regiao_descricao img {
-    width: 26vw;
-    padding-right: 3%;
-    float: right;
+    width: 35vw;
 }
 
 #regiao_leste, #regiao_norte, #regiao_oeste, #regiao_sudeste, #regiao_sudoeste, #regiao_central {
@@ -439,7 +452,7 @@ header {
     font-size: 1.7vw;
     padding-left: 3%;
 
-    animation-name: effect1;
+    animation-name: effect2;
     animation-duration: 0.2s;
     animation-timing-function: linear;
 }
@@ -452,8 +465,8 @@ header {
 #section3 {
     width: 100%;
     height: auto;
-    margin-top: 30px;
-    background-color: rgba(69, 255, 122, 0.5);
+    margin-top: 50px;
+    background-color: rgba(69, 255, 122, 1);
 }
 
 #section3 article {
@@ -553,7 +566,7 @@ header {
     height: auto;
     margin-top: 30px;
     display: flex;
-    background-color: rgba(69, 255, 122, 0.5);
+    background-color: rgba(69, 255, 122, 1);
 }
 
 #section4 article {
@@ -689,7 +702,7 @@ footer {
     width: 100%;
     height: auto;
     margin-top: 40px;
-    background-color: #0ED145;
+    background-color: #048347;
 }
 
 #footer2 {
@@ -701,20 +714,17 @@ footer {
     height: auto;
     margin: auto;
     padding: 2vh 0;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #fff;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-footer img {
-    width: 7vw;
-    padding-left: 2vw;
-}
-
 footer h1 {
     font-size: 3vw;
     font-family: yeon_sung;
+    color: #fff;
+    font-weight: normal;
 }
 
 footer nav {
@@ -728,12 +738,18 @@ footer nav {
 }
 
 footer a {
-    color: #000;
+    color: #fff;
     font-size: 1.7vw;
 }
 
 footer a:hover {
     text-decoration: underline;
+}
+
+#footer_superior img {
+    width: 7vw;
+    padding-left: 2vw;
+    filter: invert(1);
 }
 
 #footer_inferior {
@@ -796,7 +812,11 @@ br{display: none;}
     }
     
     #header_inicial img {
-        width: 22vw;
+        width: 12vw;
+    }
+
+    #header_inicial div {
+        width: 48%;
     }
 
     #header_middle {
@@ -831,7 +851,7 @@ br{display: none;}
     /*Section2 - Laptop*/
 
     #section2 {
-        height: 640px;
+        height: 580px;
     }
 
     #section2 p {
@@ -921,7 +941,11 @@ br{display: none;}
     }
     
     #header_inicial img {
-        width: 26vw;
+        width: 15vw;
+    }
+
+    #header_inicial div {
+        width: 50%;
     }
 
     #header_middle {
@@ -959,12 +983,16 @@ br{display: none;}
     /*Section2 - Tablet*/
 
     #section2 {
-        height: 500px;
+        height: 420px;
     }
 
     #section2 svg {
         width: 100%;
         margin: 0;
+    }
+
+    #section2_part1 h3 {
+        font-size: 2vw;
     }
 
     #regiao_leste {
@@ -1047,11 +1075,11 @@ br{display: none;}
    
     /*Footer - Tablet*/
 
-    footer h1 {
-        font-size: 30px;
+    #footer_superior h1 {
+        font-size: 4.5vw;
     }
 
-    footer img {
+    #footer_superior img {
         width: 60px;
         height: auto;
     }
@@ -1083,15 +1111,19 @@ br{display: none;}
     /*Header - Celular*/
 
     #header_inicial {
-        width: 45%;
+        width: 35%;
     }
 
     #header_inicial img {
-        width: 38vw;
+        width: 20vw;
+    }
+
+    #header_inicial div {
+        width: 57%;
     }
 
     #header_middle {
-        width: 40%;
+        width: 50%;
     }
 
     #header_end {
@@ -1154,6 +1186,11 @@ br{display: none;}
 
     #section2 svg {
         padding: 0;
+    }
+
+    #section2_part1 h3 {
+        font-size: 4vw;
+        margin-bottom: 20px;
     }
 
     #section2_part2 {

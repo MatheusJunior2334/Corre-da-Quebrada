@@ -25,13 +25,13 @@ function mudarTema(){
             scroll.style.setProperty("--scroll_color", "#eee0e0a2");
             scroll.style.setProperty("--scroll_bg", "#353333")
             document.getElementById("menu").style.backgroundColor="#494646";
-            document.querySelector("#menu img").style.cssText="filter: invert(1)";
+            document.querySelector("#menu img").style.cssText="filter: invert(0)";
             document.querySelector("body").style.cssText="color: #fff";
             document.querySelector("main").style.backgroundColor="#302D2D";
 
             //Header
             document.querySelector("header").style.backgroundColor="#494646";
-            document.querySelector("header img").style.cssText="filter: invert(1)";
+            document.querySelector("header img").style.cssText="filter: invert(0)";
             document.querySelector("#header_inicial div").style.cssText="background-color: #302d2d";
 
             //Dark Mode
@@ -39,12 +39,13 @@ function mudarTema(){
 
             //Section1
             document.getElementById("section1").style.backgroundColor="#302D2D";
+            document.querySelector("#button_adjust button").style.backgroundColor="#048347";
             document.getElementById("big_img").style.border="2px solid #025930";
 
             //Section2
-            document.getElementById("section2").style.backgroundImage="url('/Assets/IMAGES/bigbus_dark.png')";
-            document.getElementById("section2_part1").style.backgroundColor="rgba(4, 131, 71, 0.25)";
-            document.getElementById("section2_part2").style.backgroundColor="rgba(4, 131, 71, 0.25)";
+            //document.getElementById("section2").style.backgroundImage="url('/Assets/IMAGES/bigbus_dark.png')";
+            document.getElementById("section2_part1").style.backgroundColor="rgba(4, 131, 71, 1)";
+            document.getElementById("section2_part2").style.backgroundColor="rgba(4, 131, 71, 1)";
 
             //Section3
             document.getElementById("section3").style.backgroundColor="#048347";
@@ -55,16 +56,10 @@ function mudarTema(){
             //Footer
             document.querySelector("footer").style.backgroundColor="#494646";
             document.getElementById("footer_superior").style.cssText="border-bottom: 1px solid #fff";
-            document.querySelector("footer img").style.cssText="filter: invert(1)";
             
             for (i=0; i<=1; i++) {
                 document.getElementsByClassName("text_color")[i].style.cssText="color: #0ED145";
                // document.getElementById(`investimento${i+1}`).style.backgroundColor="#262626"; O $ serve para colocar uma variável dentro da string, e é necessário que a variável esteja entre uma chave e a variávl dentro dos parênteses deve estar dentro de uma crase
-            }
-
-            for (i=0; i<=7; i++) {
-                document.getElementsByClassName("header_options")[i].style.color="#fff";
-                document.getElementsByClassName("footer_options")[i].style.color="#fff";
             }
 
             lastTheme = "light";
@@ -73,14 +68,14 @@ function mudarTema(){
         case "light":
             scroll.style.setProperty("--scroll_color", "#353333");
             scroll.style.setProperty("--scroll_bg", "#eee0e0a2");
-            document.querySelector("#menu img").style.cssText="filter: invert(0)";
-            document.getElementById("menu").style.backgroundColor="#0ED145";
+            document.querySelector("#menu img").style.cssText="filter: invert(1)";
+            document.getElementById("menu").style.backgroundColor="#048347";
             document.querySelector("body").style.cssText="color: #000";
             document.querySelector("main").style.backgroundColor="#FFF";
 
             //Header
-            document.querySelector("header").style.backgroundColor="#0ED145";
-            document.querySelector("header img").style.cssText="filter: invert(0)";
+            document.querySelector("header").style.backgroundColor="#048347";
+            document.querySelector("#header_inicial img").style.cssText="filter: invert(1)";
             document.querySelector("#header_inicial div").style.cssText="background-color: #fff";
 
             //Dark Mode Icon
@@ -88,32 +83,26 @@ function mudarTema(){
 
             //Section1
             document.getElementById("section1").style.backgroundColor="#fff";
+            document.querySelector("#button_adjust button").style.backgroundColor="#025930";
             document.getElementById("big_img").style.border="2px solid #025930";
 
             //Section2
-            document.getElementById("section2").style.backgroundImage="url('Assets/IMAGES/bigbus_light.png')";
-            document.getElementById("section2_part1").style.backgroundColor="rgba(69, 255, 122, 0.4)";
-            document.getElementById("section2_part2").style.backgroundColor="rgba(69, 255, 122, 0.4)";
+           // document.getElementById("section2").style.backgroundImage="url('Assets/IMAGES/bigbus_light.png')";
+            document.getElementById("section2_part1").style.backgroundColor="rgba(69, 255, 122, 1)";
+            document.getElementById("section2_part2").style.backgroundColor="rgba(69, 255, 122, 1)";
 
             //Section3
-            document.getElementById("section3").style.backgroundColor="rgba(69, 255, 122, 0.5)";
+            document.getElementById("section3").style.backgroundColor="rgba(69, 255, 122, 1)";
 
             //Section4
-            document.getElementById("section4").style.backgroundColor="rgba(69, 255, 122, 0.5)";
+            document.getElementById("section4").style.backgroundColor="rgba(69, 255, 122, 1)";
 
             //Footer
-            document.querySelector("footer").style.backgroundColor="#0ED145";
-            document.getElementById("footer_superior").style.cssText="border-bottom: 1px solid #000";
-            document.querySelector("footer img").style.cssText="filter: invert(0)";
+            document.querySelector("footer").style.backgroundColor="#048347";
             
 
             for (i=0; i<=1; i++) {
                 document.getElementsByClassName("text_color")[i].style.cssText="color: #025930";
-            }
-
-            for (i=0; i<=7; i++) {
-                document.getElementsByClassName("header_options")[i].style.color="#000";
-                document.getElementsByClassName("footer_options")[i].style.color="#000";
             }
 
             lastTheme = "dark";
@@ -217,10 +206,10 @@ sr.reveal("#section1 h1", {
 })
 
 sr.reveal("#button_adjust", {
-    origin: "center",
-    distance: "0px",
+    origin: "top",
+    distance: "10px",
     duration: 750,
-    delay: 350
+    delay: 450
 })
 
 sr.reveal("#section2", {
@@ -263,4 +252,11 @@ sr.reveal("#section4_part2", {
     distance: "0px",
     duration: 750,
     delay: 300
+})
+
+sr.reveal("#footer_superior img", {
+    origin: "right",
+    distance: "80px",
+    duration: 1100,
+    delay: 600
 })
