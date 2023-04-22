@@ -47,7 +47,7 @@ Esse projeto faz parte do "Corre da Quebrada", projeto ministrado pela Professor
     </a>
     <a href="https://github.com/MatheusJunior2334/Corre-da-Quebrada" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="github" width="50" height="50"/>
     </a>
-    <a href="https://marcio-motorista-especial.vercel.app/" target="_blank"> <img src="https://i.imgur.com/pXEU2VL.png" alt ="site do Márcio" width="150">
+    <a href="https://marcio-motorista-especial.vercel.app/" target="_blank"> <img src="https://i.imgur.com/pXEU2VL.png" alt ="site do Márcio" width="50">
     </a>
     <a href="https://www.linkedin.com/in/matheus-j%C3%BAnior-770746235/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="50" height="50"/>
     </a>
